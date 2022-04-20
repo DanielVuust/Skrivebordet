@@ -12,8 +12,6 @@ namespace Skrivebordet
         public SavePicture(string currentPath)
         {
             File.Copy(currentPath, $"Pictures\\{Path.GetFileName(currentPath)}");
-
-
         }
     }
 }

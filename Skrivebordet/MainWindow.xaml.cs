@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -49,18 +50,22 @@ namespace Skrivebordet
 
                 i.Source = src;
                 i.Stretch = Stretch.Uniform;
-
                 i.Height = 200;
                 i.Width = 200;
                 
                 ListPictures.Items.Add(i);
             }
-        }
+        } 
 
         private void ListPictures_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListBox listBox = (ListBox)sender;
-            
+            Image selectedImage = (Image)listBox.SelectedItem;
+            BitmapImage src = (BitmapImage) selectedImage.Source;
+            string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\"+ src.UriSource.ToString();
+            UpdateBackground updateBackground = new UpdateBackground();
+            updateBackground.SetWallpaper(path);
+        
         }
     }
 }

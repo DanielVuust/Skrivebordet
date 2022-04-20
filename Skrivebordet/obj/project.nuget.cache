@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8i6cGISzDbwJCyhl+Zu4qlx+Mnxpstk3yEGTPIwV+4J0BWIuq+3a/NDwMqWcdsqK/EbMThmuMKY0IyBd70l8A==",
+  "dgSpecHash": "O9gFsnxiiJ6Qfj4sL9PxgoapNc5qaoovb+3jQvxpWBXX4eZvijVZpeHcFHn+VTnjByI1dIZP/GSALhVgNE9QGg==",
   "success": true,
-  "projectFilePath": "C:\\Code\\Skrivebordet\\Skrivebordet\\Skrivebordet.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\beho5\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512",
-    "C:\\Users\\beho5\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\beho5\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\beho5\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\davu\\source\\repos\\Skole\\H2\\WPF\\Skrivebordet\\Skrivebordet\\Skrivebordet.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
