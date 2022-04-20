@@ -56,5 +56,11 @@ namespace Skrivebordet
                 ListPictures.Items.Add(i);
             }
         }
+
+        private void ListPictures_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox listBox = (ListBox)sender;
+            
+        }
     }
 }
