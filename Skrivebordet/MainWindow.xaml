@@ -15,6 +15,9 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Button Content="Upload" HorizontalAlignment="Left" Margin="678,59,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="1.665,0.199" Click="AddPicture"/>
-        <TextBox HorizontalAlignment="Left" Margin="73,54,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" Height="29"/>
+        <TextBox Name="FilePath" HorizontalAlignment="Left" Margin="73,54,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" Height="29"/>
+        <ListBox x:Name="ListPictures" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            
+        </ListBox>
     </Grid>
 </Window>

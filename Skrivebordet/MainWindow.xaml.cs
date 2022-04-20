@@ -23,12 +23,38 @@ namespace Skrivebordet
         public MainWindow()
         {
             InitializeComponent();
+            UpdatePictures();
         }
 
         private void AddPicture(object sender, RoutedEventArgs e)
         {
             UploadPicture uploadPicture = new UploadPicture();
-            uploadPicture.Upload(@"C:\Users\davu\OneDrive - cdm.dk\Billeder\Novartis (2).jpg");
+            uploadPicture.Upload(FilePath.Text);
+
+        }
+        
+        private void UpdatePictures()
+        {
+            AllPictures pictures = new AllPictures();
+
+            foreach (var picture in pictures.GetAllPictures())
+            {
+                BitmapImage src = new BitmapImage();
+                Image i = new Image();
+
+                src.BeginInit();
+                src.UriSource = new Uri($"{picture}", UriKind.Relative);
+                src.CacheOption = BitmapCacheOption.OnLoad;
+                src.EndInit();
+
+                i.Source = src;
+                i.Stretch = Stretch.Uniform;
+
+                i.Height = 200;
+                i.Width = 200;
+                
+                ListPictures.Items.Add(i);
+            }
         }
     }
 }
