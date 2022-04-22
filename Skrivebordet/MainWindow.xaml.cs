@@ -65,7 +65,17 @@ namespace Skrivebordet
             string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\"+ src.UriSource.ToString();
             UpdateBackground updateBackground = new UpdateBackground();
             updateBackground.SetWallpaper(path);
-        
+                   
+        }
+
+        private void EnableShuffle(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void DisableShuffle(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
